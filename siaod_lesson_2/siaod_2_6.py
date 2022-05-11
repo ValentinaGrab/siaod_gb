@@ -5,11 +5,11 @@
 import random
 
 def guess_func(secret_num, count = 0,user_num=-1):
-    if count == 10:
+    if count == 11:
         return f"Попыток больше нет, загадано {secret_num}"
     else:
-        if user_num ==-1:
-            user_num = int(input())
+        if user_num == -1:
+            user_num = int(input("Угадайте число: "))
             return guess_func(secret_num, count + 1, user_num)
         elif user_num > secret_num:
             print("Загаданное число меньше, попробуйте еще раз")
@@ -23,5 +23,5 @@ def guess_func(secret_num, count = 0,user_num=-1):
             return f"Отгадали!"
 
 secret_num = random.randint(1, 100)
-print(secret_num)
+#print(secret_num)
 print(guess_func(secret_num))

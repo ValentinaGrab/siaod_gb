@@ -7,5 +7,5 @@ def convert(num):
     else:
         return num[-1] + convert(num[:-1])
 
-a = input()
+a = input("Введите число: ")
 print(convert(a))
