@@ -2,4 +2,4 @@
 
 num = int(input('Введите номер буквы алфавита: '))
 char = chr(ord('a')+num-1)
-print('Это буква ', char)
+print('Это буква:', char)
